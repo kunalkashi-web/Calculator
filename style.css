@@ -1,0 +1,271 @@
+* {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+    border-style: none;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: hsl(222, 26%, 31%);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 35px 25px 0px 25px;
+    width: 90%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.theme-mode-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.theme {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+/* THEME SWITCH */
+
+.radio-button-container {
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    background-color: hsl(223, 31%, 20%);
+    min-width: 65px;
+    height: 18px;
+}
+
+input:checked {
+    background: red;
+}
+
+.theme-numb {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    font-size: 0.8rem;
+    top: -60%;
+    min-width: 65px;
+
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+input {
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: -5px;
+    left: 0;
+    margin: 0%;
+}
+
+#toggle1:checked {
+    background: red;
+}
+
+
+
+/*INPUT SECTION*/
+
+.calc-screen-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.screen {
+    min-height: 80px;
+    min-width: 95%;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: 2rem;
+    background: hsl(224, 36%, 15%);
+    color: white;
+    border-style: none;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.keys-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    gap: 1rem;
+    padding: 20px;
+    border-radius: 10px;
+    background: hsl(223, 31%, 20%);
+}
+
+.key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    font-size: 1.5rem;
+    background: hsl(30, 25%, 89%);
+    border-radius: 6px;
+    color: hsl(221, 14%, 31%);
+    box-shadow: hsl(28, 16%, 65%) 0px 4px;
+}
+
+.clear-key {
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    box-shadow: hsl(224, 28%, 35%) 0px 4px;
+}
+
+
+.equal-key {
+    font-size: 2rem;
+    border-radius: 6px;
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    box-shadow: hsl(6, 70%, 34%) 0px 4px;
+
+}
+
+
+
+/*theme2*/
+.theme2-bg {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.header2 {
+    color: hsl(60, 10%, 19%);
+}
+
+.radio-button-container {
+    background-color: hsl(0, 5%, 81%);
+}
+
+#toggle2:checked {
+    background: hsl(25, 98%, 40%);
+}
+
+.screen2 {
+    background: hsl(0, 0%, 93%);
+    color: hsl(60, 10%, 19%);
+}
+
+.keys-container2 {
+    background: hsl(0, 5%, 81%);
+}
+
+.key2 {
+    color: hsl(60, 10%, 19%);
+    background: hsl(45, 7%, 89%);
+    box-shadow: hsl(35, 11%, 61%) 0px 4px;
+}
+
+.equal-key2 {
+    background-color: hsl(25, 98%, 40%);
+    color: white;
+    box-shadow: hsl(25, 99%, 27%) 0px 4px;
+}
+
+.clear-key2{
+    background-color: hsl(185, 42%, 37%);
+    color: white;
+    box-shadow: hsl(185, 58%, 25%) 0px 4px;
+}
+
+
+/*theme3*/
+.theme3-bg {
+    background-color: hsl(268, 75%, 9%);
+}
+
+.header3 {
+    color: hsl(52, 100%, 62%);
+}
+
+.screen3 {
+    background: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%)
+}
+
+.keys-container3 {
+    background: hsl(268, 71%, 12%);
+}
+
+.radio-button-container3 {
+    background-color: hsl(268, 71%, 12%);
+}
+
+#toggle3:checked {
+    background: hsl(176, 100%, 44%);
+}
+
+.key3 {
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: hsl(290, 70%, 36%) 0px 4px;
+
+}
+
+.equal-key3 {
+    background-color: hsl(176, 100%, 44%);
+    color: black;
+    box-shadow: hsl(177, 92%, 70%) 0px 4px;
+}
+
+.clear-key3 {
+
+    background: hsl(281, 89%, 26%);
+    color: white;
+    box-shadow: hsl(285, 91%, 52%) 0px 4px;
+
+}
+
+
+
+/*LAYOUT*/
+
+.reset-key {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.equal-key {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+
+@media (min-width:400px) {
+
+    main {
+        width: 400px;
+    }
+
+
+}

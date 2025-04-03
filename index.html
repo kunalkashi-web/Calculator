@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+ 
+
+
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+
+<body>
+
+  <main class="container">
+    <header>
+      <h1>calc</h1>
+      <div class="theme-mode-container">
+        
+        <span class="theme">theme</span>
+        
+          <form class="radio-button-container">
+            <div class="theme-numb">
+
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+
+            </div>
+            
+            <input type="radio" name="radio" value="1" class="radio-btn" id="toggle1" checked />
+            <label for="Choice1"></label>
+
+            <input type="radio" name="radio" value="2" class="radio-btn" id="toggle2" />
+            <label for="Choice2"></label>
+
+            <input type="radio" name="radio" value="3" class="radio-btn" id="toggle3"/>
+            <label for="Choice3"></label>
+
+          </form>
+
+      </div>
+    </header>
+
+
+    <form name="screen" class="calc-screen-container">
+      <input type="text" name="text" class="screen" id="screen-theme">
+    </form>
+
+    <section class="keys-container">
+
+      <button class="key">7</button>
+      <button class="key">8</button>
+      <button class="key">9</button>
+      <button class="clear-key key" id="clear-key">del</button>
+      <button class="key">4</button>
+      <button class="key">5</button>
+      <button class="key">6</button>
+      <button class="key">+</button>
+      <button class="key">1</button>
+      <button class="key">2</button>
+      <button class="key">3</button>
+      <button class="key">-</button>
+      <button class="key">.</button>
+      <button class="key">0</button>
+      <button class="key">/</button>
+      <button class="key">*</button>
+      <button class="clear-key key reset-key" id="clear-key">reset</button>
+      <button class="equal-key key" id="equal-key">=</button>
+
+    </section>
+  </main>
+
+  <script defer src="script.js"></script>
+</body>
+
+</html>
